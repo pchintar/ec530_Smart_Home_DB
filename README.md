@@ -1,5 +1,5 @@
 # Smart Home Database
-Simple SQLite database for tracking household locations, devices, and device activity logs.
+SQLite database for tracking household locations, devices, and device activity logs.
 
 ## Files
 - `smart_home_setup.sql` - database schema
@@ -43,4 +43,3 @@ INSERT INTO DeviceLog (device_id, action, old_value, new_value) VALUES (1, 'temp
 
 ## Requirements
 - SQLite 3.x
-```
