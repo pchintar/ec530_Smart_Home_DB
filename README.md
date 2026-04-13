@@ -4,13 +4,7 @@ SQLite database for tracking household locations, devices, and device activity l
 ## Files
 - `smart_home_setup.sql` - database schema
 
-## Setup
-```bash
-sqlite3 my_smart_home.db < smart_home_setup.sql
-sqlite3 my_smart_home.db
-```
-
-## Tables
+## Tables Created
 | Table | Purpose |
 |-------|---------|
 | Household | Stores home and owner info |
@@ -20,6 +14,12 @@ sqlite3 my_smart_home.db
 
 ## Soft Delete
 Devices table has `is_deleted` column (0 = active, 1 = deleted). Hides devices without losing historical logs.
+
+## Setup
+```bash
+sqlite3 my_smart_home.db < smart_home_setup.sql
+sqlite3 my_smart_home.db
+```
 
 ## Sample Queries
 ```sql
