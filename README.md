@@ -7,6 +7,7 @@ SQLite database for tracking household locations, devices, and device activity l
 ## Setup
 ```bash
 sqlite3 my_smart_home.db < smart_home_setup.sql
+sqlite3 my_smart_home.db
 ```
 
 ## Tables
